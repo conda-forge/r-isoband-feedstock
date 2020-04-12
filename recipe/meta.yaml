@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/isoband_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/isoband/isoband_{{ version }}.tar.gz
-  sha256: 783197e50c0a58ada4f8b5980d52150264eaab4fd97e14faddf67a3c8e1e02e4
+  sha256: 18883606bea8352e04a4618bea4e5c9833269e73a46b50bc006dddf4c8b6b4d9
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -48,11 +48,10 @@ test:
 about:
   home: https://github.com/wilkelab/isoband
   license: MIT
-  summary: A fast C++ implementation to generate contour lines (isolines) and contour polygons
-    (isobands) from regularly spaced grids containing elevation data.
+  summary: A fast C++ implementation to generate contour lines (isolines) and contour polygons (isobands) from regularly spaced grids containing elevation data.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
