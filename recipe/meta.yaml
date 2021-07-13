@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/isoband_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/isoband/isoband_{{ version }}.tar.gz
-  sha256: 96d5bbdbfa4ead40bf30cec5a0d525b6a6b0f21eb92d179289ce2c4459bf387c
+  sha256: 46f53fa066f0966f02cb2bf050190c0d5e950dab2cdf565feb63fc092c886ba5
 
 build:
   merge_build_host: true  # [win]
