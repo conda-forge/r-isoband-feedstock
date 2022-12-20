@@ -1,13 +1,17 @@
 About r-isoband
 ===============
 
-Home: https://github.com/wilkelab/isoband
+Home: https://isoband.r-lib.org
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-isoband-feedstock/blob/main/LICENSE.txt)
 
 Summary: A fast C++ implementation to generate contour lines (isolines) and contour polygons (isobands) from regularly spaced grids containing elevation data.
+
+Development: https://github.com/r-lib/isoband
+
+Documentation: https://isoband.r-lib.org/reference/index.html
 
 Current build status
 ====================
